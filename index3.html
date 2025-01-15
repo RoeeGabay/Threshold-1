@@ -202,11 +202,9 @@
 </head>
 <body>
     <!-- Sounds -->
-    <audio id="correct-sound" src="correct-answer.mp3" preload="auto"></audio>
-    <audio id="wrong-sound" src="wrong-answer.mp3" preload="auto"></audio>
-    <audio id="lost-game-sound" src="game-lost.mp3" preload="auto"></audio>
-    <audio id="won-game-sound" src="game-won.mp3" preload="auto"></audio>
-    <audio id="intro-sound" src="intro.mp3" preload="auto"></audio>
+    <audio id="correct-sound" src="\correct-answer.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="\wrong-answer.mp3" preload="auto"></audio>
+
     
     <div class="stars"></div>
     <div class="game-container">
@@ -411,8 +409,6 @@
         }
 
         window.onload = () => {
-            const wrongSound = document.getElementById('wrong-sound');
-            wrongSound.play();
             setTimeout(startGame, 4000); // Start game after 4 seconds delay to let the intro animation play
 
         };
